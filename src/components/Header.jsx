@@ -1,7 +1,10 @@
 import React from 'react'
-import { WHATSAPP_ORDER_URL } from '../constants'
+import { buildWhatsappOrderUrl } from '../constants'
+import { useLanguage } from '../i18n/LanguageContext'
 
 export default function Header() {
+  const { T, lang, toggleLang } = useLanguage()
+
   return (
     <header className='header'>
       <div className='container header__inner'>
@@ -10,12 +13,20 @@ export default function Header() {
         </div>
         <div className='header__actions'>
           <nav className='nav'>
-            <a href='#home'>דף הבית</a>
-            <a href='#collection'>קולקציה</a>
-            <a href='#board'>לוח השראה</a>
-            <a href='#about'>אודות</a>
+            <a href='#home'>{T.nav.home}</a>
+            <a href='#collection'>{T.nav.collection}</a>
+            <a href='#board'>{T.nav.board}</a>
+            <a href='#about'>{T.nav.about}</a>
           </nav>
-          <a className='cta' href={WHATSAPP_ORDER_URL} target='_blank' rel='noopener noreferrer'>להזמנות</a>
+          <button
+            type='button'
+            className='lang-toggle'
+            onClick={toggleLang}
+            aria-label={lang === 'he' ? 'Switch to English' : 'עבור לעברית'}
+          >
+            {T.langToggle}
+          </button>
+          <a className='cta' href={buildWhatsappOrderUrl(T.whatsappMessage)} target='_blank' rel='noopener noreferrer'>{T.cta}</a>
         </div>
       </div>
     </header>
