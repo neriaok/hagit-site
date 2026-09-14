@@ -1,20 +1,3 @@
-// import React from 'react'
-
-// export default function Collection(){
-//   return (
-//     <section id='collection' className='container section'>
-//       <h3>הקולקציה שלנו</h3>
-//       <div className='grid'>
-//         {Array.from({length:6}).map((_,i) => (
-//           <div className='card' key={i}>
-//             <img src={`/placeholder-${i+1}.jpg`} alt={`מטפחת ${i+1}`} />
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   )
-// }
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
