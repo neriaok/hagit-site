@@ -4,13 +4,15 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export default function Collection() {
+  const { T } = useLanguage();
   const scarves = Array.from({ length: 6 });
 
   return (
     <section id="collection" className="container section">
-      <h3 className="collection-title">הקולקציה שלנו</h3>
+      <h3 className="collection-title">{T.collection.title}</h3>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -27,7 +29,7 @@ export default function Collection() {
             <div className="scarf-card">
               <img
                 src={`/placeholder-${i + 1}.jpg`}
-                alt={`מטפחת ${i + 1}`}
+                alt={T.collection.imgAlt(i + 1)}
                 className="scarf-img"
                 loading="lazy"
               />
