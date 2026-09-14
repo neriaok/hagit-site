@@ -21,9 +21,8 @@ body {
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   background: var(--bg);
   color: var(--text);
-  direction: ltr;
-  /* שונה מ-rtl ל-ltr */
-  text-align: left;
+  direction: rtl;
+  text-align: right;
 }
 
 .container {
@@ -96,6 +95,12 @@ body {
   object-fit: contain;
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
 .nav {
   font-style: oblique;
   display: flex;
@@ -137,15 +142,11 @@ body {
   gap: 100px;
   padding: 110px 0;
   justify-content: space-between;
-  /* שומר על פיזור בין טקסט לתמונה */
 }
 
 .hero__text {
   flex: 1;
   max-width: 50%;
-  /* חצי קונטיינר */
-  text-align: right;
-  /* טקסט מצד שמאל */
 }
 
 .hero__text h2 {

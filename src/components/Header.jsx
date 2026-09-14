@@ -7,7 +7,7 @@ export default function Header() {
         <div className='logo'>
             <img src="/logo.jpg" alt="Hagit Logo" className="logo__image" />
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '80px' }}>
+        <div className='header__actions'>
           <nav className='nav'>
             <a href='#about'>אודות</a>
             <a href='#collection'>קולקציה</a>
