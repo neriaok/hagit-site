@@ -17,7 +17,7 @@ export default function About() {
           <p>כל מטפחת היא חלק קטן מסיפור – שלך ושלי</p>
         </div>
         <div className="about-image">
-          <img src="/logo.jpg" alt="חגית יוצרת מטפחות" />
+          <img src="/logo.jpg" alt="חגית יוצרת מטפחות" loading="lazy" />
         </div>
       </div>
     </section>

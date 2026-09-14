@@ -10,7 +10,7 @@ export default function Board() {
         {types.map((t, i) => (
           <div className="board-card" key={i}>
             <div className="board-image">
-              <img src={`/placeholder-board-${i + 1}.jpg`} alt={t} />
+              <img src={`/placeholder-board-${i + 1}.jpg`} alt={t} loading="lazy" />
             </div>
             <div className="board-overlay" />
             <div className="board-content">

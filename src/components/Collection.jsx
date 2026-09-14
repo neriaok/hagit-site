@@ -29,6 +29,7 @@ export default function Collection() {
                 src={`/placeholder-${i + 1}.jpg`}
                 alt={`מטפחת ${i + 1}`}
                 className="scarf-img"
+                loading="lazy"
               />
             </div>
           </SwiperSlide>
