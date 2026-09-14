@@ -16,8 +16,12 @@ export default function Collection() {
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={30}
-        slidesPerView={3}
+        spaceBetween={16}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 2, spaceBetween: 24 },
+          980: { slidesPerView: 3, spaceBetween: 30 },
+        }}
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
