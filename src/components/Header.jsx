@@ -18,15 +18,17 @@ export default function Header() {
             <a href='#board'>{T.nav.board}</a>
             <a href='#about'>{T.nav.about}</a>
           </nav>
-          <button
-            type='button'
-            className='lang-toggle'
-            onClick={toggleLang}
-            aria-label={lang === 'he' ? 'Switch to English' : 'עבור לעברית'}
-          >
-            {T.langToggle}
-          </button>
-          <a className='cta' href={buildWhatsappOrderUrl(T.whatsappMessage)} target='_blank' rel='noopener noreferrer'>{T.cta}</a>
+          <div className='header__buttons'>
+            <button
+              type='button'
+              className='lang-toggle'
+              onClick={toggleLang}
+              aria-label={lang === 'he' ? 'Switch to English' : 'עבור לעברית'}
+            >
+              {T.langToggle}
+            </button>
+            <a className='cta' href={buildWhatsappOrderUrl(T.whatsappMessage)} target='_blank' rel='noopener noreferrer'>{T.cta}</a>
+          </div>
         </div>
       </div>
     </header>
