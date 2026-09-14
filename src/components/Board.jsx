@@ -24,7 +24,7 @@ export default function Board() {
   const types = ["קלאסיות", "יומיומיות", "מעוצבות"];
 
   return (
-    <section className="container section board">
+    <section id="board" className="container section board">
       <h3 className="board-title">לוח השראה</h3>
       <div className="board-grid">
         {types.map((t, i) => (

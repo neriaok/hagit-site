@@ -425,6 +425,20 @@ body {
   color: var(--muted);
 }
 
+.footer p {
+  margin: 0 0 6px 0;
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 /* small utilities */
 h3 {
   margin: 0 0 18px 0;
