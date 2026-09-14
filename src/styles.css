@@ -16,6 +16,10 @@ body,
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 90px;
+}
+
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
